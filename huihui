@@ -1,0 +1,16 @@
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form quest_list = new Form();
+            quest_list.Show();
+        }
+
+        public void quest_list(object sender, EventArgs e)
+        {
+            Button bt1 = new Button();
+            bt1.Name = "button";
+            bt1.Text = "Скрыть";
+            bt1.Left = 150;
+            bt1.Top = 15;
+            bt1.Click += this.Hide;
+
+        }
